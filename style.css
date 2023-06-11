@@ -1,0 +1,70 @@
+body {
+    background-image: url('Slike/nebo.jpg');
+    background-size:100%;
+    color: #cfb20c;
+           
+}
+
+.album {
+    margin-bottom: 20px;
+    color:#cfb20c;
+  }
+  
+  .album h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #cfb20c ;
+  }
+  
+  .album img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; margin: 0 auto;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+  audio {
+    width: 300px;
+    height: 30px;
+    background-color:  #45a049;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  

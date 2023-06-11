@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Gromovnik</title>
+  <meta name="keywords" content="kovano gvozdje, celicne konstrukcije, ograde, kapije">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+
+    header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100px;
+    }
+    
+    footer {
+      padding: 30px;
+      text-align: center;
+    }
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+    }
+
+    #overlay img {
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    
+    <img src="Slike/logo.jpeg" alt="logo" width="120px" height="80px">
+    
+  </header>
+    
+    <h1 align="center"> ГРОМОВНИК Д.О.О. </h1>
+    <h2 align="center"> ЛАЗАРЕВАЦ </h2>
+<p align="center"> Јанка Стајчића 9 </br>
+ПИБ: 112712696 </br>
+Матични број: 0000021724505</br>
+Број телефона: 069/2160079</br>
+</br>
+</br>
+Громовник Д.О.О. је производно предузеће са седиштем у Лазаревцу,</br> 
+чија је основна делатност пројектовање,</br> 
+израда и монтажа челичних конструкција,</br> 
+ограда од кованог гвожђа, капија...</br>
+
+
+<h1 align="center"> Албуми </h1>
+<script>
+  function showOverlay(image) {
+    var overlay = document.getElementById("overlay");
+    var overlayImage = overlay.getElementsByTagName("img")[0];
+    overlayImage.src = image.src;
+    overlay.style.display = "block";
+  }
+
+  function hideOverlay() {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "none";
+  }
+</script>
+
+  <div class="album">
+    <div class="folder">
+    <h2 align="center"> Ковано гвожђе</h2>
+    <img src="Slike/IMG_20220808_174507303.jpg" onclick="showOverlay(this)" alt="Slika 1" />
+    <div id="overlay" onclick="hideOverlay()">
+      <img src="" alt="Uvećana slika" />
+    </div>
+    <img src="Slike/kovana ograda.jpg" onclick="showOverlay(this)" alt="Slika 2">
+    <img src="Slike/IMG-4f3f0fff17c153620a2852ab2e6bccd9-V.jpg" onclick="showOverlay(this)" alt="Slika 3">
+    <img src="Slike/IMG_20220923_185035186.jpg" onclick="showOverlay(this)" alt="Slika 4">
+    <img src="Slike/IMG_20220813_174839944.jpg" onclick="showOverlay(this)" alt="Slika 5">
+    <<video width="240" height="200" controls>
+      <source src="Slike/video-1cedba74b482813b48cab7ebbd15a9c9-V.mp4" type="video/mp4">
+    </video>
+    
+  </div>
+
+  <div class="album">
+    <h2 align="center"> Гелендери, капије </h2>
+    <img src="Slike/IMG_20221021_150752583.jpg" onclick="showOverlay(this)" alt="Slika 1">
+    <img src="Slike/IMG_20230523_221629292.jpg" onclick="showOverlay(this)" alt="Slika 2">
+    <img src="Slike/IMG-ca126ca648c18753b2cf0ca8a32967df-V.jpg" onclick="showOverlay(this)" alt="Slika 3">
+    <img src="Slike/IMG-97b8abd94e3d6b7263d5c43102f6abf5-V.jpg" onclick="showOverlay(this)" alt="Slika 4">
+    <img src="Slike/panelna,jpg.jpg" onclick="showOverlay(this)" alt="Slika 5">
+    <img src="Slike/IMG-aecfa7f3a5f5a60f01a63206d822aeab-V.jpg" onclick="showOverlay(this)" alt="Slika 6">
+
+  </div>
+
+  <div class="album">
+    <h2 align="center"> Челичне констукције </h2>
+    <img src="Slike/kons/IMG_20210901_095952585_HDR.jpg" onclick="showOverlay(this)" alt="Slika 1">
+    <img src="Slike/kons/IMG_20221113_163944659.jpg" onclick="showOverlay(this)" alt="Slika 2">
+    <img src="Slike/kons/IMG_20210904_164144278_HDR.jpg" onclick="showOverlay(this)" alt="Slika 3">
+    <img src="Slike/kons/IMG_20221113_133517405.jpg" onclick="showOverlay(this)" alt="Slika 4">
+    <img src="Slike/kons/IMG_20230507_203252440.jpg" onclick="showOverlay(this)" alt="Slika 5">
+    <img src="Slike/kons/IMG_20210904_155238961_HDR.jpg" onclick="showOverlay(this)" alt="Slika 6">
+
+  </div>
+
+  <section class="contact-form">
+
+    <h2 align="center"> Контакт: </h2>
+
+    <form class="contact-form">
+      <form action="gromovnik.doo@gmail.com" method="post" enctype="text/plain"></form>
+      <div class="form-row">
+        <label for="name">Име:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Е-маил:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Порука:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-row">
+        <input type="submit" value="Пошаљи">
+      </div>
+    </form>
+    
+  </section>
+
+  <footer>
+    <p> 2023 - Душан Шабић </p>
+  </footer>
+
+</body>
+
+<audio controls>
+
+     <source src="audio/Rammstein - Du Hast.mp3" type="audio/mpeg">
+
+</html>
